@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* One shared gradient: change this single value to re-theme the whole UI */
+:root {
+  --brand-gradient: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  color: #0f172a;
+  background: #fff;
+}
+
+.bg-brand { background-image: var(--brand-gradient); }
+.text-brand {
+  background-image: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+html { scroll-behavior: smooth; }
